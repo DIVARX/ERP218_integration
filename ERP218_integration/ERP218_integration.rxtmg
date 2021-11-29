@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc>
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="ERP218_integration"
+      id="f3d3f942-e837-459c-bed2-dd8cc9d67166"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="ERP218_integration"
+      id="f3d3f942-e837-459c-bed2-dd8cc9d67166"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

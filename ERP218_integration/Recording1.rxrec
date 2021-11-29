@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="600c92f9-5e27-4111-a140-3f78bd724290"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording1"
+	namespace="ERP218_integration">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="0e9731c0-2e58-4793-ac59-efc626e2b1e0"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="7d506f9e-d97c-42d4-862d-cb53cb88c143"
+	name="ERP218_integrationRepository"
+	relativepath="ERP218_integrationRepository.rxrep">
+		<codegen
+		classname="ERP218_integrationRepository"
+		namespace="ERP218_integration">
+		</codegen>
+		<rootfolder
+		id="c01a887e-ce44-4fed-818c-c1779686fd3c"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording1.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
