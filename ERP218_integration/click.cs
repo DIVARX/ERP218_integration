@@ -24,29 +24,29 @@ namespace ERP218_integration
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Recording1 recording.
+    ///The click recording.
     /// </summary>
-    [TestModule("600c92f9-5e27-4111-a140-3f78bd724290", ModuleType.Recording, 1)]
-    public partial class Recording1 : ITestModule
+    [TestModule("a323eba0-21da-451d-91bb-15cc6603d4e6", ModuleType.Recording, 1)]
+    public partial class click : ITestModule
     {
         /// <summary>
         /// Holds an instance of the ERP218_integrationRepository repository.
         /// </summary>
         public static ERP218_integrationRepository repo = ERP218_integrationRepository.Instance;
 
-        static Recording1 instance = new Recording1();
+        static click instance = new click();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Recording1()
+        public click()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Recording1 Instance
+        public static click Instance
         {
             get { return instance; }
         }
@@ -79,6 +79,14 @@ namespace ERP218_integration
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SaisieFactureClient.Monecran.Barre_boutons_1.BoutonCREER' at Center.", repo.SaisieFactureClient.Monecran.Barre_boutons_1.BoutonCREERInfo, new RecordItemIndex(0));
+            repo.SaisieFactureClient.Monecran.Barre_boutons_1.BoutonCREER.MoveTo();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SaisieFactureClient.Monecran.Barre_boutons_1.BoutonCREER' at Center.", repo.SaisieFactureClient.Monecran.Barre_boutons_1.BoutonCREERInfo, new RecordItemIndex(1));
+            repo.SaisieFactureClient.Monecran.Barre_boutons_1.BoutonCREER.Click();
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data

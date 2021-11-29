@@ -27,6 +27,7 @@ namespace ERP218_integration
     public partial class ERP218_integrationRepository : RepoGenBaseFolder
     {
         static ERP218_integrationRepository instance = new ERP218_integrationRepository();
+        ERP218_integrationRepositoryFolders.SaisieFactureClientAppFolder _saisiefactureclient;
 
         /// <summary>
         /// Gets the singleton class instance representing the ERP218_integrationRepository element repository.
@@ -43,9 +44,142 @@ namespace ERP218_integration
         public ERP218_integrationRepository() 
             : base("ERP218_integrationRepository", "/", null, 0, false, "c01a887e-ce44-4fed-818c-c1779686fd3c", ".\\RepositoryImages\\ERP218_integrationRepositoryc01a887e.rximgres")
         {
+            _saisiefactureclient = new ERP218_integrationRepositoryFolders.SaisieFactureClientAppFolder(this);
         }
 
 #region Variables
+
+        string _index_boutonMenu_niv1 = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable index_boutonMenu_niv1.
+        /// </summary>
+        [TestVariable("8e1d77f9-8405-48d9-9e96-5f961ed45c9a")]
+        public string index_boutonMenu_niv1
+        {
+            get { return _index_boutonMenu_niv1; }
+            set { _index_boutonMenu_niv1 = value; }
+        }
+
+        string _index_boutonMenu_niv2 = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable index_boutonMenu_niv2.
+        /// </summary>
+        [TestVariable("bf11ce62-74fa-43d1-a74f-56fc87a1cd0f")]
+        public string index_boutonMenu_niv2
+        {
+            get { return _index_boutonMenu_niv2; }
+            set { _index_boutonMenu_niv2 = value; }
+        }
+
+        string _index_boutonMenu_niv3 = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable index_boutonMenu_niv3.
+        /// </summary>
+        [TestVariable("3c6bd7a1-6a68-4546-b5d5-c610c1539306")]
+        public string index_boutonMenu_niv3
+        {
+            get { return _index_boutonMenu_niv3; }
+            set { _index_boutonMenu_niv3 = value; }
+        }
+
+        string _UniqueID_bouton = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable UniqueID_bouton.
+        /// </summary>
+        [TestVariable("30996127-ae05-47d4-a661-e298ee78a3e9")]
+        public string UniqueID_bouton
+        {
+            get { return _UniqueID_bouton; }
+            set { _UniqueID_bouton = value; }
+        }
+
+        string _nom_colonne = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable nom_colonne.
+        /// </summary>
+        [TestVariable("8b1b567a-bfa0-4cc1-a28f-27e5891a3d15")]
+        public string nom_colonne
+        {
+            get { return _nom_colonne; }
+            set { _nom_colonne = value; }
+        }
+
+        string _ID_ligne = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable ID_ligne.
+        /// </summary>
+        [TestVariable("8b5fdf3e-2dc5-4dd4-981d-e3eed0049e22")]
+        public string ID_ligne
+        {
+            get { return _ID_ligne; }
+            set { _ID_ligne = value; }
+        }
+
+        string _ID_CaseControle = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable ID_CaseControle.
+        /// </summary>
+        [TestVariable("9b5ab7dc-9046-40ca-a8c7-4795301a3be9")]
+        public string ID_CaseControle
+        {
+            get { return _ID_CaseControle; }
+            set { _ID_CaseControle = value; }
+        }
+
+        string _ID_texte = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable ID_texte.
+        /// </summary>
+        [TestVariable("e97ec33c-088f-4a17-b273-1ac0abe7dede")]
+        public string ID_texte
+        {
+            get { return _ID_texte; }
+            set { _ID_texte = value; }
+        }
+
+        string _id_case_a_cocher = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable id_case_a_cocher.
+        /// </summary>
+        [TestVariable("aac7969b-fdda-4fab-9d21-a5f1c9f6a2f9")]
+        public string id_case_a_cocher
+        {
+            get { return _id_case_a_cocher; }
+            set { _id_case_a_cocher = value; }
+        }
+
+        string _id_combo = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable id_combo.
+        /// </summary>
+        [TestVariable("827256ee-4947-4676-8c3b-b40df1647919")]
+        public string id_combo
+        {
+            get { return _id_combo; }
+            set { _id_combo = value; }
+        }
+
+        string _Nom_onglet = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable Nom_onglet.
+        /// </summary>
+        [TestVariable("8b07ede7-ebea-42be-938e-aecceaa89ce9")]
+        public string Nom_onglet
+        {
+            get { return _Nom_onglet; }
+            set { _Nom_onglet = value; }
+        }
 
 #endregion
 
@@ -60,6 +194,15 @@ namespace ERP218_integration
                 return _selfInfo;
             }
         }
+
+        /// <summary>
+        /// The SaisieFactureClient folder.
+        /// </summary>
+        [RepositoryFolder("4b968f75-45bd-4c14-8e9d-fdfbf3fa32dc")]
+        public virtual ERP218_integrationRepositoryFolders.SaisieFactureClientAppFolder SaisieFactureClient
+        {
+            get { return _saisiefactureclient; }
+        }
     }
 
     /// <summary>
@@ -68,6 +211,1436 @@ namespace ERP218_integration
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
     public partial class ERP218_integrationRepositoryFolders
     {
+        /// <summary>
+        /// The SaisieFactureClientAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("4b968f75-45bd-4c14-8e9d-fdfbf3fa32dc")]
+        public partial class SaisieFactureClientAppFolder : RepoGenBaseFolder
+        {
+            ERP218_integrationRepositoryFolders.MonecranFolder _monecran;
+
+            /// <summary>
+            /// Creates a new SaisieFactureClient  folder.
+            /// </summary>
+            public SaisieFactureClientAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("SaisieFactureClient", "/dom[@caption~'Divalto -.*- Factures Clients -.*']", parentFolder, 30000, true, false, "4b968f75-45bd-4c14-8e9d-fdfbf3fa32dc", "")
+            {
+                _monecran = new ERP218_integrationRepositoryFolders.MonecranFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("4b968f75-45bd-4c14-8e9d-fdfbf3fa32dc")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("4b968f75-45bd-4c14-8e9d-fdfbf3fa32dc")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Monecran folder.
+            /// </summary>
+            [RepositoryFolder("d8eed580-9c5c-4e97-9278-9964127f44a6")]
+            public virtual ERP218_integrationRepositoryFolders.MonecranFolder Monecran
+            {
+                get { return _monecran; }
+            }
+        }
+
+        /// <summary>
+        /// The MonecranFolder folder.
+        /// </summary>
+        [RepositoryFolder("d8eed580-9c5c-4e97-9278-9964127f44a6")]
+        public partial class MonecranFolder : RepoGenBaseFolder
+        {
+            ERP218_integrationRepositoryFolders.MenuFolder _menu;
+            ERP218_integrationRepositoryFolders.Barre_boutons_1Folder _barre_boutons_1;
+            ERP218_integrationRepositoryFolders.Barre_boutons_2Folder _barre_boutons_2;
+            ERP218_integrationRepositoryFolders.MonbodyFolder _monbody;
+
+            /// <summary>
+            /// Creates a new Monecran  folder.
+            /// </summary>
+            public MonecranFolder(RepoGenBaseFolder parentFolder) :
+                    base("Monecran", "body/div[#'monecran']", parentFolder, 30000, null, false, "d8eed580-9c5c-4e97-9278-9964127f44a6", "")
+            {
+                _menu = new ERP218_integrationRepositoryFolders.MenuFolder(this);
+                _barre_boutons_1 = new ERP218_integrationRepositoryFolders.Barre_boutons_1Folder(this);
+                _barre_boutons_2 = new ERP218_integrationRepositoryFolders.Barre_boutons_2Folder(this);
+                _monbody = new ERP218_integrationRepositoryFolders.MonbodyFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("d8eed580-9c5c-4e97-9278-9964127f44a6")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("d8eed580-9c5c-4e97-9278-9964127f44a6")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Menu folder.
+            /// </summary>
+            [RepositoryFolder("5d893420-d8b5-48d3-83a4-014d8aed4dcc")]
+            public virtual ERP218_integrationRepositoryFolders.MenuFolder Menu
+            {
+                get { return _menu; }
+            }
+
+            /// <summary>
+            /// The Barre_boutons_1 folder.
+            /// </summary>
+            [RepositoryFolder("1483aa48-ea04-48d3-ae80-586aad4b2313")]
+            public virtual ERP218_integrationRepositoryFolders.Barre_boutons_1Folder Barre_boutons_1
+            {
+                get { return _barre_boutons_1; }
+            }
+
+            /// <summary>
+            /// The Barre_boutons_2 folder.
+            /// </summary>
+            [RepositoryFolder("74624f6d-264a-45c9-a0d5-41caa7685917")]
+            public virtual ERP218_integrationRepositoryFolders.Barre_boutons_2Folder Barre_boutons_2
+            {
+                get { return _barre_boutons_2; }
+            }
+
+            /// <summary>
+            /// The Monbody folder.
+            /// </summary>
+            [RepositoryFolder("1f218633-3ffc-4a35-a671-28ffab4980ff")]
+            public virtual ERP218_integrationRepositoryFolders.MonbodyFolder Monbody
+            {
+                get { return _monbody; }
+            }
+        }
+
+        /// <summary>
+        /// The MenuFolder folder.
+        /// </summary>
+        [RepositoryFolder("5d893420-d8b5-48d3-83a4-014d8aed4dcc")]
+        public partial class MenuFolder : RepoGenBaseFolder
+        {
+            ERP218_integrationRepositoryFolders.Barre_Menu_1Folder _barre_menu_1;
+
+            /// <summary>
+            /// Creates a new Menu  folder.
+            /// </summary>
+            public MenuFolder(RepoGenBaseFolder parentFolder) :
+                    base("Menu", "div[#'monmenu']", parentFolder, 30000, null, false, "5d893420-d8b5-48d3-83a4-014d8aed4dcc", "")
+            {
+                _barre_menu_1 = new ERP218_integrationRepositoryFolders.Barre_Menu_1Folder(this);
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("5d893420-d8b5-48d3-83a4-014d8aed4dcc")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("5d893420-d8b5-48d3-83a4-014d8aed4dcc")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The barre_Menu_1 folder.
+            /// </summary>
+            [RepositoryFolder("0c001213-075f-4c9c-92aa-c7f8abadb088")]
+            public virtual ERP218_integrationRepositoryFolders.Barre_Menu_1Folder barre_Menu_1
+            {
+                get { return _barre_menu_1; }
+            }
+        }
+
+        /// <summary>
+        /// The Barre_Menu_1Folder folder.
+        /// </summary>
+        [RepositoryFolder("0c001213-075f-4c9c-92aa-c7f8abadb088")]
+        public partial class Barre_Menu_1Folder : RepoGenBaseFolder
+        {
+            RepoItemInfo _bouton_menu_niv_1Info;
+            RepoItemInfo _bouton_menu_niv_2Info;
+            RepoItemInfo _icone_cochee_niv_2Info;
+            RepoItemInfo _bouton_menu_niv_3Info;
+            RepoItemInfo _icone_cochee_niv_3Info;
+
+            /// <summary>
+            /// Creates a new barre_Menu_1  folder.
+            /// </summary>
+            public Barre_Menu_1Folder(RepoGenBaseFolder parentFolder) :
+                    base("barre_Menu_1", "div[#'menu_14_1']", parentFolder, 30000, null, false, "0c001213-075f-4c9c-92aa-c7f8abadb088", "")
+            {
+                _bouton_menu_niv_1Info = new RepoItemInfo(this, "Bouton_menu_NIV_1", "ul[#'divaltoMenu']/li[$index_boutonMenu_niv1]", 30000, null, "1fb6788e-4afa-40f8-90fc-d0caa6fa3869");
+                _bouton_menu_niv_2Info = new RepoItemInfo(this, "Bouton_menu_NIV_2", "ul[#'divaltoMenu']/li[$index_boutonMenu_niv1]/?/?/ul/li[$index_boutonMenu_niv2]", 30000, null, "98ccde28-7ac2-4b5e-8d1a-ef77cf606790");
+                _icone_cochee_niv_2Info = new RepoItemInfo(this, "icone_cochee_NIV_2", "ul[#'divaltoMenu']/li[$index_boutonMenu_niv1]/?/?/ul/li[$index_boutonMenu_niv2]/span/span[@class='k-sprite']/span", 30000, null, "d7cfd80c-01d4-46fd-8f28-3d41f1eafc40");
+                _bouton_menu_niv_3Info = new RepoItemInfo(this, "Bouton_menu_NIV_3", "ul[#'divaltoMenu']/li[$index_boutonMenu_niv1]/div/ul/li[$index_boutonMenu_niv2]/?/?/ul/li[$index_boutonMenu_niv3]", 30000, null, "c7078d20-f85d-4a22-8533-547b9ee0a61f");
+                _icone_cochee_niv_3Info = new RepoItemInfo(this, "icone_cochee_NIV_3", "ul[#'divaltoMenu']/li[$index_boutonMenu_niv1]/div/ul/li[$index_boutonMenu_niv2]/?/?/ul/li[$index_boutonMenu_niv3]/span/span[@class='k-sprite']/span", 30000, null, "46c7eb74-6a95-4f15-ba1b-b9afbcc2a65e");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("0c001213-075f-4c9c-92aa-c7f8abadb088")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("0c001213-075f-4c9c-92aa-c7f8abadb088")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Bouton_menu_NIV_1 item.
+            /// </summary>
+            [RepositoryItem("1fb6788e-4afa-40f8-90fc-d0caa6fa3869")]
+            public virtual Ranorex.LiTag Bouton_menu_NIV_1
+            {
+                get
+                {
+                    return _bouton_menu_niv_1Info.CreateAdapter<Ranorex.LiTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Bouton_menu_NIV_1 item info.
+            /// </summary>
+            [RepositoryItemInfo("1fb6788e-4afa-40f8-90fc-d0caa6fa3869")]
+            public virtual RepoItemInfo Bouton_menu_NIV_1Info
+            {
+                get
+                {
+                    return _bouton_menu_niv_1Info;
+                }
+            }
+
+            /// <summary>
+            /// The Bouton_menu_NIV_2 item.
+            /// </summary>
+            [RepositoryItem("98ccde28-7ac2-4b5e-8d1a-ef77cf606790")]
+            public virtual Ranorex.LiTag Bouton_menu_NIV_2
+            {
+                get
+                {
+                    return _bouton_menu_niv_2Info.CreateAdapter<Ranorex.LiTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Bouton_menu_NIV_2 item info.
+            /// </summary>
+            [RepositoryItemInfo("98ccde28-7ac2-4b5e-8d1a-ef77cf606790")]
+            public virtual RepoItemInfo Bouton_menu_NIV_2Info
+            {
+                get
+                {
+                    return _bouton_menu_niv_2Info;
+                }
+            }
+
+            /// <summary>
+            /// The icone_cochee_NIV_2 item.
+            /// </summary>
+            [RepositoryItem("d7cfd80c-01d4-46fd-8f28-3d41f1eafc40")]
+            public virtual Ranorex.SpanTag icone_cochee_NIV_2
+            {
+                get
+                {
+                    return _icone_cochee_niv_2Info.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The icone_cochee_NIV_2 item info.
+            /// </summary>
+            [RepositoryItemInfo("d7cfd80c-01d4-46fd-8f28-3d41f1eafc40")]
+            public virtual RepoItemInfo icone_cochee_NIV_2Info
+            {
+                get
+                {
+                    return _icone_cochee_niv_2Info;
+                }
+            }
+
+            /// <summary>
+            /// The Bouton_menu_NIV_3 item.
+            /// </summary>
+            [RepositoryItem("c7078d20-f85d-4a22-8533-547b9ee0a61f")]
+            public virtual Ranorex.LiTag Bouton_menu_NIV_3
+            {
+                get
+                {
+                    return _bouton_menu_niv_3Info.CreateAdapter<Ranorex.LiTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Bouton_menu_NIV_3 item info.
+            /// </summary>
+            [RepositoryItemInfo("c7078d20-f85d-4a22-8533-547b9ee0a61f")]
+            public virtual RepoItemInfo Bouton_menu_NIV_3Info
+            {
+                get
+                {
+                    return _bouton_menu_niv_3Info;
+                }
+            }
+
+            /// <summary>
+            /// The icone_cochee_NIV_3 item.
+            /// </summary>
+            [RepositoryItem("46c7eb74-6a95-4f15-ba1b-b9afbcc2a65e")]
+            public virtual Ranorex.SpanTag icone_cochee_NIV_3
+            {
+                get
+                {
+                    return _icone_cochee_niv_3Info.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The icone_cochee_NIV_3 item info.
+            /// </summary>
+            [RepositoryItemInfo("46c7eb74-6a95-4f15-ba1b-b9afbcc2a65e")]
+            public virtual RepoItemInfo icone_cochee_NIV_3Info
+            {
+                get
+                {
+                    return _icone_cochee_niv_3Info;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The Barre_boutons_1Folder folder.
+        /// </summary>
+        [RepositoryFolder("1483aa48-ea04-48d3-ae80-586aad4b2313")]
+        public partial class Barre_boutons_1Folder : RepoGenBaseFolder
+        {
+            RepoItemInfo _boutoncreerInfo;
+            RepoItemInfo _boutonvaruniqueidInfo;
+            RepoItemInfo _boutonvaliderInfo;
+
+            /// <summary>
+            /// Creates a new Barre_boutons_1  folder.
+            /// </summary>
+            public Barre_boutons_1Folder(RepoGenBaseFolder parentFolder) :
+                    base("Barre_boutons_1", "div[#'mestoolbars']//div[#'toolbar_1_1']", parentFolder, 30000, null, false, "1483aa48-ea04-48d3-ae80-586aad4b2313", "")
+            {
+                _boutoncreerInfo = new RepoItemInfo(this, "BoutonCREER", "span[#'toolbar_1_1_CREER']", 30000, null, "e4ba8052-ef0d-4f01-9625-d50f0a3d1b29");
+                _boutonvaruniqueidInfo = new RepoItemInfo(this, "BoutonVarUniqueID", "span[#$UniqueID_bouton]", 30000, null, "d6bd3b51-e95d-414c-a2d9-d1fc13c528fa");
+                _boutonvaliderInfo = new RepoItemInfo(this, "BoutonValider", "span[#'toolbar_1_1_OK']", 30000, null, "62028f05-b65b-43e9-aaaf-08c16a0d3626");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("1483aa48-ea04-48d3-ae80-586aad4b2313")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("1483aa48-ea04-48d3-ae80-586aad4b2313")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BoutonCREER item.
+            /// </summary>
+            [RepositoryItem("e4ba8052-ef0d-4f01-9625-d50f0a3d1b29")]
+            public virtual Ranorex.SpanTag BoutonCREER
+            {
+                get
+                {
+                    return _boutoncreerInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BoutonCREER item info.
+            /// </summary>
+            [RepositoryItemInfo("e4ba8052-ef0d-4f01-9625-d50f0a3d1b29")]
+            public virtual RepoItemInfo BoutonCREERInfo
+            {
+                get
+                {
+                    return _boutoncreerInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BoutonVarUniqueID item.
+            /// </summary>
+            [RepositoryItem("d6bd3b51-e95d-414c-a2d9-d1fc13c528fa")]
+            public virtual Ranorex.SpanTag BoutonVarUniqueID
+            {
+                get
+                {
+                    return _boutonvaruniqueidInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BoutonVarUniqueID item info.
+            /// </summary>
+            [RepositoryItemInfo("d6bd3b51-e95d-414c-a2d9-d1fc13c528fa")]
+            public virtual RepoItemInfo BoutonVarUniqueIDInfo
+            {
+                get
+                {
+                    return _boutonvaruniqueidInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BoutonValider item.
+            /// </summary>
+            [RepositoryItem("62028f05-b65b-43e9-aaaf-08c16a0d3626")]
+            public virtual Ranorex.SpanTag BoutonValider
+            {
+                get
+                {
+                    return _boutonvaliderInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BoutonValider item info.
+            /// </summary>
+            [RepositoryItemInfo("62028f05-b65b-43e9-aaaf-08c16a0d3626")]
+            public virtual RepoItemInfo BoutonValiderInfo
+            {
+                get
+                {
+                    return _boutonvaliderInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The Barre_boutons_2Folder folder.
+        /// </summary>
+        [RepositoryFolder("74624f6d-264a-45c9-a0d5-41caa7685917")]
+        public partial class Barre_boutons_2Folder : RepoGenBaseFolder
+        {
+            RepoItemInfo _boutonvaruniqueidInfo;
+
+            /// <summary>
+            /// Creates a new Barre_boutons_2  folder.
+            /// </summary>
+            public Barre_boutons_2Folder(RepoGenBaseFolder parentFolder) :
+                    base("Barre_boutons_2", "div[#'mestoolbars']//div[#'toolbar_2_1']", parentFolder, 30000, null, false, "74624f6d-264a-45c9-a0d5-41caa7685917", "")
+            {
+                _boutonvaruniqueidInfo = new RepoItemInfo(this, "BoutonVarUniqueID", "span[#$UniqueID_bouton]", 30000, null, "bc0cb058-22a7-4d9b-a063-47ab6fa7108f");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("74624f6d-264a-45c9-a0d5-41caa7685917")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("74624f6d-264a-45c9-a0d5-41caa7685917")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BoutonVarUniqueID item.
+            /// </summary>
+            [RepositoryItem("bc0cb058-22a7-4d9b-a063-47ab6fa7108f")]
+            public virtual Ranorex.SpanTag BoutonVarUniqueID
+            {
+                get
+                {
+                    return _boutonvaruniqueidInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BoutonVarUniqueID item info.
+            /// </summary>
+            [RepositoryItemInfo("bc0cb058-22a7-4d9b-a063-47ab6fa7108f")]
+            public virtual RepoItemInfo BoutonVarUniqueIDInfo
+            {
+                get
+                {
+                    return _boutonvaruniqueidInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The MonbodyFolder folder.
+        /// </summary>
+        [RepositoryFolder("1f218633-3ffc-4a35-a671-28ffab4980ff")]
+        public partial class MonbodyFolder : RepoGenBaseFolder
+        {
+            ERP218_integrationRepositoryFolders.TableauFolder _tableau;
+            ERP218_integrationRepositoryFolders.Entete_pieceFolder _entete_piece;
+            ERP218_integrationRepositoryFolders.Pied_pieceFolder _pied_piece;
+            ERP218_integrationRepositoryFolders.Onglet_ComplementFolder _onglet_complement;
+
+            /// <summary>
+            /// Creates a new Monbody  folder.
+            /// </summary>
+            public MonbodyFolder(RepoGenBaseFolder parentFolder) :
+                    base("Monbody", "div[#'monbody']", parentFolder, 30000, null, false, "1f218633-3ffc-4a35-a671-28ffab4980ff", "")
+            {
+                _tableau = new ERP218_integrationRepositoryFolders.TableauFolder(this);
+                _entete_piece = new ERP218_integrationRepositoryFolders.Entete_pieceFolder(this);
+                _pied_piece = new ERP218_integrationRepositoryFolders.Pied_pieceFolder(this);
+                _onglet_complement = new ERP218_integrationRepositoryFolders.Onglet_ComplementFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("1f218633-3ffc-4a35-a671-28ffab4980ff")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("1f218633-3ffc-4a35-a671-28ffab4980ff")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Tableau folder.
+            /// </summary>
+            [RepositoryFolder("356ebee6-afec-4232-a96b-3cd2b9afd9e3")]
+            public virtual ERP218_integrationRepositoryFolders.TableauFolder Tableau
+            {
+                get { return _tableau; }
+            }
+
+            /// <summary>
+            /// The Entete_piece folder.
+            /// </summary>
+            [RepositoryFolder("598c170e-9848-43ee-9e01-85b8235469c9")]
+            public virtual ERP218_integrationRepositoryFolders.Entete_pieceFolder Entete_piece
+            {
+                get { return _entete_piece; }
+            }
+
+            /// <summary>
+            /// The Pied_piece folder.
+            /// </summary>
+            [RepositoryFolder("8070e1dc-9ebe-4698-9b08-aa07d4b4fbb2")]
+            public virtual ERP218_integrationRepositoryFolders.Pied_pieceFolder Pied_piece
+            {
+                get { return _pied_piece; }
+            }
+
+            /// <summary>
+            /// The Onglet_Complement folder.
+            /// </summary>
+            [RepositoryFolder("1b97980e-9900-448f-8a5d-5ad40f7d9908")]
+            public virtual ERP218_integrationRepositoryFolders.Onglet_ComplementFolder Onglet_Complement
+            {
+                get { return _onglet_complement; }
+            }
+        }
+
+        /// <summary>
+        /// The TableauFolder folder.
+        /// </summary>
+        [RepositoryFolder("356ebee6-afec-4232-a96b-3cd2b9afd9e3")]
+        public partial class TableauFolder : RepoGenBaseFolder
+        {
+            ERP218_integrationRepositoryFolders.Entete_tableauFolder _entete_tableau;
+            ERP218_integrationRepositoryFolders.Corps_tableauFolder _corps_tableau;
+            RepoItemInfo _casecontroleInfo;
+
+            /// <summary>
+            /// Creates a new Tableau  folder.
+            /// </summary>
+            public TableauFolder(RepoGenBaseFolder parentFolder) :
+                    base("Tableau", "div[#'M4P11L1C1_1']/div[#'370_M4P11L1C1_1']", parentFolder, 30000, null, false, "356ebee6-afec-4232-a96b-3cd2b9afd9e3", "")
+            {
+                _entete_tableau = new ERP218_integrationRepositoryFolders.Entete_tableauFolder(this);
+                _corps_tableau = new ERP218_integrationRepositoryFolders.Corps_tableauFolder(this);
+                _casecontroleInfo = new RepoItemInfo(this, "CaseControle", "div[#'tab_controle']/div[#'tab_casescontrole']/div[#$ID_CaseControle]", 30000, null, "7f98b7ca-f799-4902-b957-9cca6f437df8");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("356ebee6-afec-4232-a96b-3cd2b9afd9e3")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("356ebee6-afec-4232-a96b-3cd2b9afd9e3")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CaseControle item.
+            /// </summary>
+            [RepositoryItem("7f98b7ca-f799-4902-b957-9cca6f437df8")]
+            public virtual Ranorex.DivTag CaseControle
+            {
+                get
+                {
+                    return _casecontroleInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CaseControle item info.
+            /// </summary>
+            [RepositoryItemInfo("7f98b7ca-f799-4902-b957-9cca6f437df8")]
+            public virtual RepoItemInfo CaseControleInfo
+            {
+                get
+                {
+                    return _casecontroleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Entete_tableau folder.
+            /// </summary>
+            [RepositoryFolder("7c91c6a6-0abd-4cd0-8ede-a2a3fdc20b2c")]
+            public virtual ERP218_integrationRepositoryFolders.Entete_tableauFolder Entete_tableau
+            {
+                get { return _entete_tableau; }
+            }
+
+            /// <summary>
+            /// The Corps_tableau folder.
+            /// </summary>
+            [RepositoryFolder("22d7285b-2a46-4a1c-ab3a-ce08ea57731a")]
+            public virtual ERP218_integrationRepositoryFolders.Corps_tableauFolder Corps_tableau
+            {
+                get { return _corps_tableau; }
+            }
+        }
+
+        /// <summary>
+        /// The Entete_tableauFolder folder.
+        /// </summary>
+        [RepositoryFolder("7c91c6a6-0abd-4cd0-8ede-a2a3fdc20b2c")]
+        public partial class Entete_tableauFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _cellule_entete_var_titreInfo;
+
+            /// <summary>
+            /// Creates a new Entete_tableau  folder.
+            /// </summary>
+            public Entete_tableauFolder(RepoGenBaseFolder parentFolder) :
+                    base("Entete_tableau", "div[#'tab_entete']", parentFolder, 30000, null, false, "7c91c6a6-0abd-4cd0-8ede-a2a3fdc20b2c", "")
+            {
+                _cellule_entete_var_titreInfo = new RepoItemInfo(this, "cellule_entete_var_titre", "div[#'tab_entete_variable']/div[@title=$nom_colonne]", 30000, null, "ad2ff9c4-8296-4119-81d1-1bc585127438");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("7c91c6a6-0abd-4cd0-8ede-a2a3fdc20b2c")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("7c91c6a6-0abd-4cd0-8ede-a2a3fdc20b2c")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The cellule_entete_var_titre item.
+            /// </summary>
+            [RepositoryItem("ad2ff9c4-8296-4119-81d1-1bc585127438")]
+            public virtual Ranorex.DivTag cellule_entete_var_titre
+            {
+                get
+                {
+                    return _cellule_entete_var_titreInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The cellule_entete_var_titre item info.
+            /// </summary>
+            [RepositoryItemInfo("ad2ff9c4-8296-4119-81d1-1bc585127438")]
+            public virtual RepoItemInfo cellule_entete_var_titreInfo
+            {
+                get
+                {
+                    return _cellule_entete_var_titreInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The Corps_tableauFolder folder.
+        /// </summary>
+        [RepositoryFolder("22d7285b-2a46-4a1c-ab3a-ce08ea57731a")]
+        public partial class Corps_tableauFolder : RepoGenBaseFolder
+        {
+            ERP218_integrationRepositoryFolders.LigneVariable_var_idFolder _lignevariable_var_id;
+            ERP218_integrationRepositoryFolders.LigneFixe_var_idFolder _lignefixe_var_id;
+
+            /// <summary>
+            /// Creates a new Corps_tableau  folder.
+            /// </summary>
+            public Corps_tableauFolder(RepoGenBaseFolder parentFolder) :
+                    base("Corps_tableau", "div[#'tab_corps']", parentFolder, 30000, null, false, "22d7285b-2a46-4a1c-ab3a-ce08ea57731a", "")
+            {
+                _lignevariable_var_id = new ERP218_integrationRepositoryFolders.LigneVariable_var_idFolder(this);
+                _lignefixe_var_id = new ERP218_integrationRepositoryFolders.LigneFixe_var_idFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("22d7285b-2a46-4a1c-ab3a-ce08ea57731a")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("22d7285b-2a46-4a1c-ab3a-ce08ea57731a")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ligneVariable_var_id folder.
+            /// </summary>
+            [RepositoryFolder("d5c91e7d-a731-4047-b306-acfafff50637")]
+            public virtual ERP218_integrationRepositoryFolders.LigneVariable_var_idFolder ligneVariable_var_id
+            {
+                get { return _lignevariable_var_id; }
+            }
+
+            /// <summary>
+            /// The ligneFixe_var_id folder.
+            /// </summary>
+            [RepositoryFolder("f39e48f6-06ef-4be0-9d1c-d127d2877bba")]
+            public virtual ERP218_integrationRepositoryFolders.LigneFixe_var_idFolder ligneFixe_var_id
+            {
+                get { return _lignefixe_var_id; }
+            }
+        }
+
+        /// <summary>
+        /// The LigneVariable_var_idFolder folder.
+        /// </summary>
+        [RepositoryFolder("d5c91e7d-a731-4047-b306-acfafff50637")]
+        public partial class LigneVariable_var_idFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _cellule_var_titleInfo;
+            RepoItemInfo _texte_cellule_var_idInfo;
+
+            /// <summary>
+            /// Creates a new ligneVariable_var_id  folder.
+            /// </summary>
+            public LigneVariable_var_idFolder(RepoGenBaseFolder parentFolder) :
+                    base("ligneVariable_var_id", "div[#'tab_corps_variable']/div[@id=$ID_ligne]", parentFolder, 30000, null, false, "d5c91e7d-a731-4047-b306-acfafff50637", "")
+            {
+                _cellule_var_titleInfo = new RepoItemInfo(this, "Cellule_var_title", "div[@title=$nom_colonne]", 30000, null, "db63bd4e-a787-4e15-8004-a01352cb9e15");
+                _texte_cellule_var_idInfo = new RepoItemInfo(this, "texte_cellule_var_id", "div[@title=$nom_colonne]//div[#'divaltoSaisieTab']/input[@type='text']", 30000, null, "a81e106f-dc6f-4de4-ba7f-fdd08deb75a9");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("d5c91e7d-a731-4047-b306-acfafff50637")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("d5c91e7d-a731-4047-b306-acfafff50637")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Cellule_var_title item.
+            /// </summary>
+            [RepositoryItem("db63bd4e-a787-4e15-8004-a01352cb9e15")]
+            public virtual Ranorex.DivTag Cellule_var_title
+            {
+                get
+                {
+                    return _cellule_var_titleInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Cellule_var_title item info.
+            /// </summary>
+            [RepositoryItemInfo("db63bd4e-a787-4e15-8004-a01352cb9e15")]
+            public virtual RepoItemInfo Cellule_var_titleInfo
+            {
+                get
+                {
+                    return _cellule_var_titleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The texte_cellule_var_id item.
+            /// </summary>
+            [RepositoryItem("a81e106f-dc6f-4de4-ba7f-fdd08deb75a9")]
+            public virtual Ranorex.InputTag texte_cellule_var_id
+            {
+                get
+                {
+                    return _texte_cellule_var_idInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The texte_cellule_var_id item info.
+            /// </summary>
+            [RepositoryItemInfo("a81e106f-dc6f-4de4-ba7f-fdd08deb75a9")]
+            public virtual RepoItemInfo texte_cellule_var_idInfo
+            {
+                get
+                {
+                    return _texte_cellule_var_idInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The LigneFixe_var_idFolder folder.
+        /// </summary>
+        [RepositoryFolder("f39e48f6-06ef-4be0-9d1c-d127d2877bba")]
+        public partial class LigneFixe_var_idFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _icone_cellule_var_titleInfo;
+
+            /// <summary>
+            /// Creates a new ligneFixe_var_id  folder.
+            /// </summary>
+            public LigneFixe_var_idFolder(RepoGenBaseFolder parentFolder) :
+                    base("ligneFixe_var_id", "div[#'tab_corps_fixe']/div[@id=$ID_ligne]", parentFolder, 30000, null, false, "f39e48f6-06ef-4be0-9d1c-d127d2877bba", "")
+            {
+                _icone_cellule_var_titleInfo = new RepoItemInfo(this, "Icone_cellule_var_title", "div[@title=$nom_colonne]/div", 30000, null, "476bf140-c268-467f-9400-3ce71773ba12");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("f39e48f6-06ef-4be0-9d1c-d127d2877bba")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("f39e48f6-06ef-4be0-9d1c-d127d2877bba")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Icone_cellule_var_title item.
+            /// </summary>
+            [RepositoryItem("476bf140-c268-467f-9400-3ce71773ba12")]
+            public virtual Ranorex.DivTag Icone_cellule_var_title
+            {
+                get
+                {
+                    return _icone_cellule_var_titleInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Icone_cellule_var_title item info.
+            /// </summary>
+            [RepositoryItemInfo("476bf140-c268-467f-9400-3ce71773ba12")]
+            public virtual RepoItemInfo Icone_cellule_var_titleInfo
+            {
+                get
+                {
+                    return _icone_cellule_var_titleInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The Entete_pieceFolder folder.
+        /// </summary>
+        [RepositoryFolder("598c170e-9848-43ee-9e01-85b8235469c9")]
+        public partial class Entete_pieceFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _champ_num_pieceInfo;
+            RepoItemInfo _champ_tiersInfo;
+            RepoItemInfo _champ_text_var_idInfo;
+
+            /// <summary>
+            /// Creates a new Entete_piece  folder.
+            /// </summary>
+            public Entete_pieceFolder(RepoGenBaseFolder parentFolder) :
+                    base("Entete_piece", "div[#'M4P2L1C1_1']", parentFolder, 30000, null, false, "598c170e-9848-43ee-9e01-85b8235469c9", "")
+            {
+                _champ_num_pieceInfo = new RepoItemInfo(this, "Champ_num_piece", "span[#'1349_M4P2L1C1_1']/?/?/span", 30000, null, "6b7f7e76-1c08-4416-8404-959fec0d5a66");
+                _champ_tiersInfo = new RepoItemInfo(this, "Champ_Tiers", "span[#'1351_M4P2L1C1_1']/?/?/span", 30000, null, "dcd137b2-7511-483a-8e7e-e0625f3c4565");
+                _champ_text_var_idInfo = new RepoItemInfo(this, "champ_text_var_ID", "div[#$ID_texte]/input[@type='text']", 30000, null, "c3cd1b63-9de1-4c78-a664-05a545055fb4");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("598c170e-9848-43ee-9e01-85b8235469c9")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("598c170e-9848-43ee-9e01-85b8235469c9")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Champ_num_piece item.
+            /// </summary>
+            [RepositoryItem("6b7f7e76-1c08-4416-8404-959fec0d5a66")]
+            public virtual Ranorex.SpanTag Champ_num_piece
+            {
+                get
+                {
+                    return _champ_num_pieceInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Champ_num_piece item info.
+            /// </summary>
+            [RepositoryItemInfo("6b7f7e76-1c08-4416-8404-959fec0d5a66")]
+            public virtual RepoItemInfo Champ_num_pieceInfo
+            {
+                get
+                {
+                    return _champ_num_pieceInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Champ_Tiers item.
+            /// </summary>
+            [RepositoryItem("dcd137b2-7511-483a-8e7e-e0625f3c4565")]
+            public virtual Ranorex.SpanTag Champ_Tiers
+            {
+                get
+                {
+                    return _champ_tiersInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Champ_Tiers item info.
+            /// </summary>
+            [RepositoryItemInfo("dcd137b2-7511-483a-8e7e-e0625f3c4565")]
+            public virtual RepoItemInfo Champ_TiersInfo
+            {
+                get
+                {
+                    return _champ_tiersInfo;
+                }
+            }
+
+            /// <summary>
+            /// The champ_text_var_ID item.
+            /// </summary>
+            [RepositoryItem("c3cd1b63-9de1-4c78-a664-05a545055fb4")]
+            public virtual Ranorex.InputTag champ_text_var_ID
+            {
+                get
+                {
+                    return _champ_text_var_idInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The champ_text_var_ID item info.
+            /// </summary>
+            [RepositoryItemInfo("c3cd1b63-9de1-4c78-a664-05a545055fb4")]
+            public virtual RepoItemInfo champ_text_var_IDInfo
+            {
+                get
+                {
+                    return _champ_text_var_idInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The Pied_pieceFolder folder.
+        /// </summary>
+        [RepositoryFolder("8070e1dc-9ebe-4698-9b08-aa07d4b4fbb2")]
+        public partial class Pied_pieceFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _champ_text_var_idInfo;
+
+            /// <summary>
+            /// Creates a new Pied_piece  folder.
+            /// </summary>
+            public Pied_pieceFolder(RepoGenBaseFolder parentFolder) :
+                    base("Pied_piece", "div[#'M4P12L1C1_1']", parentFolder, 30000, null, false, "8070e1dc-9ebe-4698-9b08-aa07d4b4fbb2", "")
+            {
+                _champ_text_var_idInfo = new RepoItemInfo(this, "champ_text_var_ID", "div[#$ID_texte]/input[@type='text']", 30000, null, "aebb9af1-4f47-4141-993d-35c95fd9ac37");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("8070e1dc-9ebe-4698-9b08-aa07d4b4fbb2")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("8070e1dc-9ebe-4698-9b08-aa07d4b4fbb2")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The champ_text_var_ID item.
+            /// </summary>
+            [RepositoryItem("aebb9af1-4f47-4141-993d-35c95fd9ac37")]
+            public virtual Ranorex.InputTag champ_text_var_ID
+            {
+                get
+                {
+                    return _champ_text_var_idInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The champ_text_var_ID item info.
+            /// </summary>
+            [RepositoryItemInfo("aebb9af1-4f47-4141-993d-35c95fd9ac37")]
+            public virtual RepoItemInfo champ_text_var_IDInfo
+            {
+                get
+                {
+                    return _champ_text_var_idInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The Onglet_ComplementFolder folder.
+        /// </summary>
+        [RepositoryFolder("1b97980e-9900-448f-8a5d-5ad40f7d9908")]
+        public partial class Onglet_ComplementFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _case_ongletInfo;
+            RepoItemInfo _champ_text_var_idInfo;
+            RepoItemInfo _case_a_cocher_var_idInfo;
+            RepoItemInfo _case_a_cocher_var_id_txtInfo;
+            RepoItemInfo _combobox_var_idInfo;
+            RepoItemInfo _tagsvgInfo;
+            RepoItemInfo _onglet_var_nomInfo;
+            RepoItemInfo _livraisonInfo;
+
+            /// <summary>
+            /// Creates a new Onglet_Complement  folder.
+            /// </summary>
+            public Onglet_ComplementFolder(RepoGenBaseFolder parentFolder) :
+                    base("Onglet_Complement", "div[#'M4P3L1C1_1']", parentFolder, 30000, null, false, "1b97980e-9900-448f-8a5d-5ad40f7d9908", "")
+            {
+                _case_ongletInfo = new RepoItemInfo(this, "case_onglet", "span[@class~'ouvrir']", 30000, null, "b50e0e62-4d34-4252-9f26-0b25e9986bff");
+                _champ_text_var_idInfo = new RepoItemInfo(this, "champ_text_var_ID", "div[#$ID_texte]/input[@type='text']", 30000, null, "40f3e178-d175-41b9-992d-2f6cecb7b5c9");
+                _case_a_cocher_var_idInfo = new RepoItemInfo(this, "Case_a_cocher_var_id", "div[@id=$id_case_a_cocher]", 30000, null, "a522c04a-393b-459b-870a-3ad8364e685b");
+                _case_a_cocher_var_id_txtInfo = new RepoItemInfo(this, "Case_a_cocher_var_id_txt", "div[@id=$id_case_a_cocher]", 30000, null, "e8a4a6a9-2a1c-435c-95ca-e38f13649495");
+                _combobox_var_idInfo = new RepoItemInfo(this, "combobox_var_id", ".//div[@id=$id_combo]", 30000, null, "88cafc5f-30fe-4c93-b46d-50ce8e55c75a");
+                _tagsvgInfo = new RepoItemInfo(this, "tagSvg", ".//tag[@tagname='svg']", 30000, null, "d7c34966-7796-4278-85d8-5a21be972b17");
+                _onglet_var_nomInfo = new RepoItemInfo(this, "Onglet_var_nom", ".//li/span[@innertext=$Nom_onglet]", 30000, null, "b2264a81-2499-4eab-b4db-72f77f2229ee");
+                _livraisonInfo = new RepoItemInfo(this, "LIVRAISON", "div[1]/?/?/ul/?/?/span[@innertext='LIVRAISON']", 30000, null, "12294552-78b2-44f5-9fd8-4c85d731a268");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("1b97980e-9900-448f-8a5d-5ad40f7d9908")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("1b97980e-9900-448f-8a5d-5ad40f7d9908")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The case_onglet item.
+            /// </summary>
+            [RepositoryItem("b50e0e62-4d34-4252-9f26-0b25e9986bff")]
+            public virtual Ranorex.SpanTag case_onglet
+            {
+                get
+                {
+                    return _case_ongletInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The case_onglet item info.
+            /// </summary>
+            [RepositoryItemInfo("b50e0e62-4d34-4252-9f26-0b25e9986bff")]
+            public virtual RepoItemInfo case_ongletInfo
+            {
+                get
+                {
+                    return _case_ongletInfo;
+                }
+            }
+
+            /// <summary>
+            /// The champ_text_var_ID item.
+            /// </summary>
+            [RepositoryItem("40f3e178-d175-41b9-992d-2f6cecb7b5c9")]
+            public virtual Ranorex.InputTag champ_text_var_ID
+            {
+                get
+                {
+                    return _champ_text_var_idInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The champ_text_var_ID item info.
+            /// </summary>
+            [RepositoryItemInfo("40f3e178-d175-41b9-992d-2f6cecb7b5c9")]
+            public virtual RepoItemInfo champ_text_var_IDInfo
+            {
+                get
+                {
+                    return _champ_text_var_idInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Case_a_cocher_var_id item.
+            /// </summary>
+            [RepositoryItem("a522c04a-393b-459b-870a-3ad8364e685b")]
+            public virtual Ranorex.DivTag Case_a_cocher_var_id
+            {
+                get
+                {
+                    return _case_a_cocher_var_idInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Case_a_cocher_var_id item info.
+            /// </summary>
+            [RepositoryItemInfo("a522c04a-393b-459b-870a-3ad8364e685b")]
+            public virtual RepoItemInfo Case_a_cocher_var_idInfo
+            {
+                get
+                {
+                    return _case_a_cocher_var_idInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Case_a_cocher_var_id_txt item.
+            /// </summary>
+            [RepositoryItem("e8a4a6a9-2a1c-435c-95ca-e38f13649495")]
+            public virtual Ranorex.DivTag Case_a_cocher_var_id_txt
+            {
+                get
+                {
+                    return _case_a_cocher_var_id_txtInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Case_a_cocher_var_id_txt item info.
+            /// </summary>
+            [RepositoryItemInfo("e8a4a6a9-2a1c-435c-95ca-e38f13649495")]
+            public virtual RepoItemInfo Case_a_cocher_var_id_txtInfo
+            {
+                get
+                {
+                    return _case_a_cocher_var_id_txtInfo;
+                }
+            }
+
+            /// <summary>
+            /// The combobox_var_id item.
+            /// </summary>
+            [RepositoryItem("88cafc5f-30fe-4c93-b46d-50ce8e55c75a")]
+            public virtual Ranorex.DivTag combobox_var_id
+            {
+                get
+                {
+                    return _combobox_var_idInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The combobox_var_id item info.
+            /// </summary>
+            [RepositoryItemInfo("88cafc5f-30fe-4c93-b46d-50ce8e55c75a")]
+            public virtual RepoItemInfo combobox_var_idInfo
+            {
+                get
+                {
+                    return _combobox_var_idInfo;
+                }
+            }
+
+            /// <summary>
+            /// The tagSvg item.
+            /// </summary>
+            [RepositoryItem("d7c34966-7796-4278-85d8-5a21be972b17")]
+            public virtual Ranorex.WebElement tagSvg
+            {
+                get
+                {
+                    return _tagsvgInfo.CreateAdapter<Ranorex.WebElement>(true);
+                }
+            }
+
+            /// <summary>
+            /// The tagSvg item info.
+            /// </summary>
+            [RepositoryItemInfo("d7c34966-7796-4278-85d8-5a21be972b17")]
+            public virtual RepoItemInfo tagSvgInfo
+            {
+                get
+                {
+                    return _tagsvgInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Onglet_var_nom item.
+            /// </summary>
+            [RepositoryItem("b2264a81-2499-4eab-b4db-72f77f2229ee")]
+            public virtual Ranorex.SpanTag Onglet_var_nom
+            {
+                get
+                {
+                    return _onglet_var_nomInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Onglet_var_nom item info.
+            /// </summary>
+            [RepositoryItemInfo("b2264a81-2499-4eab-b4db-72f77f2229ee")]
+            public virtual RepoItemInfo Onglet_var_nomInfo
+            {
+                get
+                {
+                    return _onglet_var_nomInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LIVRAISON item.
+            /// </summary>
+            [RepositoryItem("12294552-78b2-44f5-9fd8-4c85d731a268")]
+            public virtual Ranorex.SpanTag LIVRAISON
+            {
+                get
+                {
+                    return _livraisonInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LIVRAISON item info.
+            /// </summary>
+            [RepositoryItemInfo("12294552-78b2-44f5-9fd8-4c85d731a268")]
+            public virtual RepoItemInfo LIVRAISONInfo
+            {
+                get
+                {
+                    return _livraisonInfo;
+                }
+            }
+        }
+
     }
 #pragma warning restore 0436
 }

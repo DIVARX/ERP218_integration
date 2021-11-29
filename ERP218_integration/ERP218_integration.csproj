@@ -13,6 +13,7 @@
     <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
     <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
     <projectdefaultrepository>9d419e32-ff0a-4482-87b1-f39e05a13355</projectdefaultrepository>
+    <StartAction>Project</StartAction>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -125,6 +126,18 @@
     <Compile Include="AssemblyInfo.cs">
       <id>6486c007-8119-464d-a1d4-b78bfb4658e5</id>
     </Compile>
+    <Compile Include="click.cs">
+      <BoundTo>b101e6eb-c6e2-4090-b217-7c482b737e11</BoundTo>
+      <DependentUpon>click.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a83dbd61-1c56-41b1-8c2a-f83d865e2657</id>
+    </Compile>
+    <Compile Include="click.UserCode.cs">
+      <BoundTo>b101e6eb-c6e2-4090-b217-7c482b737e11</BoundTo>
+      <DependentUpon>click.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5b34d166-a8f9-494a-9658-8697330de3b1</id>
+    </Compile>
     <Compile Include="ERP218_integrationRepository.cs">
       <BoundTo>9d419e32-ff0a-4482-87b1-f39e05a13355</BoundTo>
       <DependentUpon>ERP218_integrationRepository.rxrep</DependentUpon>
@@ -150,6 +163,11 @@
   <ItemGroup>
     <None Include="app.config">
       <id>c6127cf9-e07d-4a14-a830-17797beadfdb</id>
+    </None>
+    <None Include="click.rxrec">
+      <BoundTo>9d419e32-ff0a-4482-87b1-f39e05a13355</BoundTo>
+      <id>b101e6eb-c6e2-4090-b217-7c482b737e11</id>
+      <recordtableid>a323eba0-21da-451d-91bb-15cc6603d4e6</recordtableid>
     </None>
     <None Include="ERP218_integrationRepository.rximg">
       <BoundTo>9d419e32-ff0a-4482-87b1-f39e05a13355</BoundTo>

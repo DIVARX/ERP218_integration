@@ -1,18 +1,454 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<repository
-name="ERP218_integrationRepository"
-id="7d506f9e-d97c-42d4-862d-cb53cb88c143">
-  <codegen
-  classname="ERP218_integrationRepository"
-  namespace="ERP218_integration"/>
-  <rootfolder
-  name="Root"
-  id="c01a887e-ce44-4fed-818c-c1779686fd3c"
-  searchtimeout="30000ms"
-  capname="unknown"
-  isrooted="True"
-  usecache="True">
-    <basepath/>
-  </rootfolder>
-  <variables/>
+﻿<repository
+id="7d506f9e-d97c-42d4-862d-cb53cb88c143"
+name="ERP218_integrationRepository">
+	<codegen
+	classname="ERP218_integrationRepository"
+	namespace="ERP218_integration">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="c01a887e-ce44-4fed-818c-c1779686fd3c"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		ensurevisible="True"
+		id="4b968f75-45bd-4c14-8e9d-fdfbf3fa32dc"
+		isrooted="True"
+		name="SaisieFactureClient"
+		refimgid="f68d2b46-7cff-4c1b-9af7-d582f1e9beb4"
+		searchtimeout="30000ms"
+		usecache="False">
+			<folder
+			capname="divtag"
+			id="d8eed580-9c5c-4e97-9278-9964127f44a6"
+			isrooted="True"
+			name="Monecran"
+			refimgid="7eec3412-5758-4852-8955-e438ea44884e"
+			searchtimeout="30000ms"
+			usecache="False">
+				<folder
+				capname="divtag"
+				id="5d893420-d8b5-48d3-83a4-014d8aed4dcc"
+				isrooted="True"
+				name="Menu"
+				refimgid="ba492969-e111-47af-902f-f9666a23810c"
+				searchtimeout="30000ms"
+				usecache="False">
+					<folder
+					capname="divtag"
+					id="0c001213-075f-4c9c-92aa-c7f8abadb088"
+					isrooted="True"
+					name="barre_Menu_1"
+					searchtimeout="30000ms"
+					usecache="False">
+						<item
+						capname="litag"
+						id="1fb6788e-4afa-40f8-90fc-d0caa6fa3869"
+						name="Bouton_menu_NIV_1"
+						searchtimeout="30000ms">
+							/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'monmenu']/div[#'menu_14_1']/ul[#'divaltoMenu']/li[$index_boutonMenu_niv1]
+						</item>
+						<item
+						capname="litag"
+						id="98ccde28-7ac2-4b5e-8d1a-ef77cf606790"
+						name="Bouton_menu_NIV_2"
+						searchtimeout="30000ms">
+							/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'monmenu']/div[#'menu_14_1']/ul[#'divaltoMenu']/li[$index_boutonMenu_niv1]/?/?/ul/li[$index_boutonMenu_niv2]
+						</item>
+						<item
+						capname="spantag"
+						id="d7cfd80c-01d4-46fd-8f28-3d41f1eafc40"
+						name="icone_cochee_NIV_2"
+						searchtimeout="30000ms">
+							/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'monmenu']/div[#'menu_14_1']/ul[#'divaltoMenu']/li[$index_boutonMenu_niv1]/?/?/ul/li[$index_boutonMenu_niv2]/span/span[@class='k-sprite']/span
+						</item>
+						<item
+						capname="litag"
+						id="c7078d20-f85d-4a22-8533-547b9ee0a61f"
+						name="Bouton_menu_NIV_3"
+						searchtimeout="30000ms">
+							/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'monmenu']/div[#'menu_14_1']/ul[#'divaltoMenu']/li[$index_boutonMenu_niv1]/div/ul/li[$index_boutonMenu_niv2]/?/?/ul/li[$index_boutonMenu_niv3]
+						</item>
+						<item
+						capname="spantag"
+						id="46c7eb74-6a95-4f15-ba1b-b9afbcc2a65e"
+						name="icone_cochee_NIV_3"
+						searchtimeout="30000ms">
+							/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'monmenu']/div[#'menu_14_1']/ul[#'divaltoMenu']/li[$index_boutonMenu_niv1]/div/ul/li[$index_boutonMenu_niv2]/?/?/ul/li[$index_boutonMenu_niv3]/span/span[@class='k-sprite']/span
+						</item>
+						<basepath>
+							/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'monmenu']/div[#'menu_14_1']
+						</basepath>
+					</folder>
+					<basepath>
+						/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'monmenu']
+					</basepath>
+				</folder>
+				<folder
+				capname="divtag"
+				id="1483aa48-ea04-48d3-ae80-586aad4b2313"
+				isrooted="True"
+				name="Barre_boutons_1"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="spantag"
+					id="e4ba8052-ef0d-4f01-9625-d50f0a3d1b29"
+					name="BoutonCREER"
+					refimgid="c5456883-b32f-4079-a109-49c3f28c1d78"
+					searchtimeout="30000ms">
+						/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'mestoolbars']//div[#'toolbar_1_1']/span[#'toolbar_1_1_CREER']
+					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="spantag"
+					id="d6bd3b51-e95d-414c-a2d9-d1fc13c528fa"
+					name="BoutonVarUniqueID"
+					refimgid="581a78a5-b0e6-4940-8ab1-2e55d62851f2"
+					searchtimeout="30000ms">
+						/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'mestoolbars']//div[#'toolbar_1_1']/span[#$UniqueID_bouton]
+					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="spantag"
+					id="62028f05-b65b-43e9-aaaf-08c16a0d3626"
+					name="BoutonValider"
+					refimgid="d42b450d-8152-431a-9f17-1de496656791"
+					searchtimeout="30000ms">
+						/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'mestoolbars']//div[#'toolbar_1_1']/span[#'toolbar_1_1_OK']
+					</item>
+					<basepath>
+						/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'mestoolbars']//div[#'toolbar_1_1']
+					</basepath>
+				</folder>
+				<folder
+				capname="divtag"
+				id="74624f6d-264a-45c9-a0d5-41caa7685917"
+				isrooted="True"
+				name="Barre_boutons_2"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="spantag"
+					id="bc0cb058-22a7-4d9b-a063-47ab6fa7108f"
+					name="BoutonVarUniqueID"
+					refimgid="930bd275-c4e3-409e-815b-f5ae8c80f267"
+					searchtimeout="30000ms">
+						/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'mestoolbars']//div[#'toolbar_2_1']/span[#$UniqueID_bouton]
+					</item>
+					<basepath>
+						/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'mestoolbars']//div[#'toolbar_2_1']
+					</basepath>
+				</folder>
+				<folder
+				capname="divtag"
+				id="1f218633-3ffc-4a35-a671-28ffab4980ff"
+				isrooted="True"
+				name="Monbody"
+				refimgid="793145ab-660a-4ef6-80ad-26ef9be4b23d"
+				searchtimeout="30000ms"
+				usecache="False">
+					<folder
+					capname="divtag"
+					id="356ebee6-afec-4232-a96b-3cd2b9afd9e3"
+					isrooted="True"
+					name="Tableau"
+					refimgid="c671c347-c5d4-40fa-a313-1b182b9764ec"
+					searchtimeout="30000ms"
+					usecache="False">
+						<folder
+						capname="divtag"
+						id="7c91c6a6-0abd-4cd0-8ede-a2a3fdc20b2c"
+						isrooted="True"
+						name="Entete_tableau"
+						searchtimeout="30000ms"
+						usecache="False">
+							<item
+							capname="divtag"
+							id="ad2ff9c4-8296-4119-81d1-1bc585127438"
+							name="cellule_entete_var_titre"
+							searchtimeout="30000ms">
+								/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'monbody']/div[#'M4P11L1C1_1']/div[#'370_M4P11L1C1_1']/div[#'tab_entete']/div[#'tab_entete_variable']/div[@title=$nom_colonne]
+							</item>
+							<basepath>
+								/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'monbody']/div[#'M4P11L1C1_1']/div[#'370_M4P11L1C1_1']/div[#'tab_entete']
+							</basepath>
+						</folder>
+						<folder
+						capname="divtag"
+						id="22d7285b-2a46-4a1c-ab3a-ce08ea57731a"
+						isrooted="True"
+						name="Corps_tableau"
+						searchtimeout="30000ms"
+						usecache="False">
+							<folder
+							capname="divtag"
+							id="d5c91e7d-a731-4047-b306-acfafff50637"
+							isrooted="True"
+							name="ligneVariable_var_id"
+							searchtimeout="30000ms"
+							usecache="False">
+								<item
+								capname="divtag"
+								id="db63bd4e-a787-4e15-8004-a01352cb9e15"
+								name="Cellule_var_title"
+								searchtimeout="30000ms">
+									/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'monbody']/div[#'M4P11L1C1_1']/div[#'370_M4P11L1C1_1']/div[#'tab_corps']/div[#'tab_corps_variable']/div[@id=$ID_ligne]/div[@title=$nom_colonne]
+								</item>
+								<item
+								capname="inputtag"
+								id="a81e106f-dc6f-4de4-ba7f-fdd08deb75a9"
+								name="texte_cellule_var_id"
+								searchtimeout="30000ms">
+									/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'monbody']/div[#'M4P11L1C1_1']/div[#'370_M4P11L1C1_1']/div[#'tab_corps']/div[#'tab_corps_variable']/div[@id=$ID_ligne]/div[@title=$nom_colonne]//div[#'divaltoSaisieTab']/input[@type='text']
+								</item>
+								<basepath>
+									/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'monbody']/div[#'M4P11L1C1_1']/div[#'370_M4P11L1C1_1']/div[#'tab_corps']/div[#'tab_corps_variable']/div[@id=$ID_ligne]
+								</basepath>
+							</folder>
+							<folder
+							capname="divtag"
+							id="f39e48f6-06ef-4be0-9d1c-d127d2877bba"
+							isrooted="True"
+							name="ligneFixe_var_id"
+							searchtimeout="30000ms"
+							usecache="False">
+								<item
+								capname="divtag"
+								id="476bf140-c268-467f-9400-3ce71773ba12"
+								name="Icone_cellule_var_title"
+								searchtimeout="30000ms">
+									/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'monbody']/div[#'M4P11L1C1_1']/div[#'370_M4P11L1C1_1']/div[#'tab_corps']/div[#'tab_corps_fixe']/div[@id=$ID_ligne]/div[@title=$nom_colonne]/div
+								</item>
+								<basepath>
+									/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'monbody']/div[#'M4P11L1C1_1']/div[#'370_M4P11L1C1_1']/div[#'tab_corps']/div[#'tab_corps_fixe']/div[@id=$ID_ligne]
+								</basepath>
+							</folder>
+							<basepath>
+								/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'monbody']/div[#'M4P11L1C1_1']/div[#'370_M4P11L1C1_1']/div[#'tab_corps']
+							</basepath>
+						</folder>
+						<item
+						capname="divtag"
+						id="7f98b7ca-f799-4902-b957-9cca6f437df8"
+						name="CaseControle"
+						searchtimeout="30000ms">
+							/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'monbody']/div[#'M4P11L1C1_1']/div[#'370_M4P11L1C1_1']/div[#'tab_controle']/div[#'tab_casescontrole']/div[#$ID_CaseControle]
+						</item>
+						<basepath>
+							/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'monbody']/div[#'M4P11L1C1_1']/div[#'370_M4P11L1C1_1']
+						</basepath>
+					</folder>
+					<folder
+					capname="divtag"
+					id="598c170e-9848-43ee-9e01-85b8235469c9"
+					isrooted="True"
+					name="Entete_piece"
+					refimgid="30dfd420-fa1e-4368-8601-73eed49f5640"
+					searchtimeout="30000ms"
+					usecache="False">
+						<item
+						capname="spantag"
+						id="6b7f7e76-1c08-4416-8404-959fec0d5a66"
+						name="Champ_num_piece"
+						searchtimeout="30000ms">
+							/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'monbody']/div[#'M4P2L1C1_1']/span[#'1349_M4P2L1C1_1']/?/?/span
+						</item>
+						<item
+						capname="spantag"
+						id="dcd137b2-7511-483a-8e7e-e0625f3c4565"
+						name="Champ_Tiers"
+						searchtimeout="30000ms">
+							/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'monbody']/div[#'M4P2L1C1_1']/span[#'1351_M4P2L1C1_1']/?/?/span
+						</item>
+						<item
+						capname="inputtag"
+						id="c3cd1b63-9de1-4c78-a664-05a545055fb4"
+						name="champ_text_var_ID"
+						searchtimeout="30000ms">
+							/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'monbody']/div[#'M4P2L1C1_1']/div[#$ID_texte]/input[@type='text']
+						</item>
+						<basepath>
+							/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'monbody']/div[#'M4P2L1C1_1']
+						</basepath>
+					</folder>
+					<folder
+					capname="divtag"
+					id="8070e1dc-9ebe-4698-9b08-aa07d4b4fbb2"
+					isrooted="True"
+					name="Pied_piece"
+					refimgid="90cd0ce7-79ac-444c-a5b7-f1b68fbad7dc"
+					searchtimeout="30000ms"
+					usecache="False">
+						<item
+						capname="inputtag"
+						id="aebb9af1-4f47-4141-993d-35c95fd9ac37"
+						name="champ_text_var_ID"
+						searchtimeout="30000ms">
+							/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'monbody']/div[#'M4P12L1C1_1']/div[#$ID_texte]/input[@type='text']
+						</item>
+						<basepath>
+							/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'monbody']/div[#'M4P12L1C1_1']
+						</basepath>
+					</folder>
+					<folder
+					capname="divtag"
+					id="1b97980e-9900-448f-8a5d-5ad40f7d9908"
+					isrooted="True"
+					name="Onglet_Complement"
+					refimgid="75aa30c3-e84a-4bb3-9278-924eb569bab0"
+					searchtimeout="30000ms"
+					usecache="False">
+						<item
+						addcaps="unknown,webelement,spantag"
+						capname="spantag"
+						id="b50e0e62-4d34-4252-9f26-0b25e9986bff"
+						name="case_onglet"
+						refimgid="4f66c814-f045-49c5-a42a-34dcb24ed9e2"
+						searchtimeout="30000ms">
+							/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'monbody']/div[#'M4P3L1C1_1']/span[@class~'ouvrir']
+						</item>
+						<item
+						capname="inputtag"
+						id="40f3e178-d175-41b9-992d-2f6cecb7b5c9"
+						name="champ_text_var_ID"
+						searchtimeout="30000ms">
+							/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'monbody']/div[#'M4P3L1C1_1']/div[#$ID_texte]/input[@type='text']
+						</item>
+						<item
+						capname="divtag"
+						id="a522c04a-393b-459b-870a-3ad8364e685b"
+						name="Case_a_cocher_var_id"
+						searchtimeout="30000ms">
+							/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'monbody']/div[#'M4P3L1C1_1']/div[@id=$id_case_a_cocher]
+						</item>
+						<item
+						capname="divtag"
+						id="e8a4a6a9-2a1c-435c-95ca-e38f13649495"
+						name="Case_a_cocher_var_id_txt"
+						searchtimeout="30000ms">
+							/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'monbody']/div[#'M4P3L1C1_1']/div[@id=$id_case_a_cocher]
+						</item>
+						<item
+						addcaps="unknown,webelement,divtag"
+						capname="divtag"
+						id="88cafc5f-30fe-4c93-b46d-50ce8e55c75a"
+						name="combobox_var_id"
+						refimgid="63847670-1f97-4e7c-bf13-832be50de777"
+						searchtimeout="30000ms">
+							/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'monbody']/div[#'M4P3L1C1_1']//div[@id=$id_combo]
+						</item>
+						<item
+						addcaps="unknown,webelement"
+						capname="webelement"
+						id="d7c34966-7796-4278-85d8-5a21be972b17"
+						name="tagSvg"
+						refimgid="69ecfd3b-1acb-4464-9909-e111ddaeb70f"
+						searchtimeout="30000ms">
+							/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'monbody']/div[#'M4P3L1C1_1']//tag[@tagname='svg']
+						</item>
+						<item
+						addcaps="unknown,webelement,spantag"
+						capname="spantag"
+						id="b2264a81-2499-4eab-b4db-72f77f2229ee"
+						name="Onglet_var_nom"
+						refimgid="4219817a-d89f-49af-9cec-c1c53768726f"
+						searchtimeout="30000ms">
+							/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'monbody']/div[#'M4P3L1C1_1']//li/span[@innertext=$Nom_onglet]
+						</item>
+						<item
+						addcaps="unknown,webelement,spantag"
+						capname="spantag"
+						id="12294552-78b2-44f5-9fd8-4c85d731a268"
+						name="LIVRAISON"
+						refimgid="6a20e0af-dad8-4c2a-8633-1f0b42f4a958"
+						searchtimeout="30000ms">
+							/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'monbody']/div[#'M4P3L1C1_1']/div[1]/?/?/ul/?/?/span[@innertext='LIVRAISON']
+						</item>
+						<basepath>
+							/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'monbody']/div[#'M4P3L1C1_1']
+						</basepath>
+					</folder>
+					<basepath>
+						/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'monbody']
+					</basepath>
+				</folder>
+				<basepath>
+					/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']
+				</basepath>
+			</folder>
+			<basepath>
+				/dom[@caption~'Divalto -.*- Factures Clients -.*']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+		<var
+		id="8e1d77f9-8405-48d9-9e96-5f961ed45c9a"
+		name="index_boutonMenu_niv1">
+		</var>
+		<var
+		id="bf11ce62-74fa-43d1-a74f-56fc87a1cd0f"
+		name="index_boutonMenu_niv2">
+		</var>
+		<var
+		id="3c6bd7a1-6a68-4546-b5d5-c610c1539306"
+		name="index_boutonMenu_niv3">
+		</var>
+		<var
+		id="30996127-ae05-47d4-a661-e298ee78a3e9"
+		name="UniqueID_bouton">
+		</var>
+		<var
+		id="8b1b567a-bfa0-4cc1-a28f-27e5891a3d15"
+		name="nom_colonne">
+		</var>
+		<var
+		id="8b5fdf3e-2dc5-4dd4-981d-e3eed0049e22"
+		name="ID_ligne">
+		</var>
+		<var
+		id="9b5ab7dc-9046-40ca-a8c7-4795301a3be9"
+		name="ID_CaseControle">
+		</var>
+		<var
+		id="e97ec33c-088f-4a17-b273-1ac0abe7dede"
+		name="ID_texte">
+		</var>
+		<var
+		id="aac7969b-fdda-4fab-9d21-a5f1c9f6a2f9"
+		name="id_case_a_cocher">
+		</var>
+		<var
+		id="827256ee-4947-4676-8c3b-b40df1647919"
+		name="id_combo">
+		</var>
+		<var
+		id="8b07ede7-ebea-42be-938e-aecceaa89ce9"
+		name="Nom_onglet">
+		</var>
+	</variables>
 </repository>
