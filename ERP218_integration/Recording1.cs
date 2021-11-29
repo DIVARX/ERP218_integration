@@ -79,11 +79,6 @@ namespace ERP218_integration
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click at {X=0,Y=0}.", new RecordItemIndex(0));
-            Mouse.MoveTo(0, 0);
-            Mouse.Click(System.Windows.Forms.MouseButtons.Left);
-            Delay.Milliseconds(0);
-            
         }
 
 #region Image Feature Data

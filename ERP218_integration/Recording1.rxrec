@@ -25,23 +25,6 @@ mode="Global">
 	<variables>
 	</variables>
 	<recorditems>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="0e9731c0-2e58-4793-ac59-efc626e2b1e0"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</mouseitem>
 	</recorditems>
 	<repository
 	id="7d506f9e-d97c-42d4-862d-cb53cb88c143"
