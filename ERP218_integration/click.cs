@@ -79,14 +79,13 @@ namespace ERP218_integration
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Up at {X=0,Y=0}.", new RecordItemIndex(0));
-            Mouse.MoveTo(0, 0);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Up item 'SaisieFactureClient.Monecran.Barre_boutons_1.BoutonCREER' at Center.", repo.SaisieFactureClient.Monecran.Barre_boutons_1.BoutonCREERInfo, new RecordItemIndex(0));
+            repo.SaisieFactureClient.Monecran.Barre_boutons_1.BoutonCREER.MoveTo();
             Mouse.ButtonUp(System.Windows.Forms.MouseButtons.Left);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click at {X=0,Y=0}.", new RecordItemIndex(1));
-            Mouse.MoveTo(0, 0);
-            Mouse.Click(System.Windows.Forms.MouseButtons.Left);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SaisieFactureClient.Monecran.Barre_boutons_1.BoutonCREER' at Center.", repo.SaisieFactureClient.Monecran.Barre_boutons_1.BoutonCREERInfo, new RecordItemIndex(1));
+            repo.SaisieFactureClient.Monecran.Barre_boutons_1.BoutonCREER.Click();
             Delay.Milliseconds(0);
             
         }
