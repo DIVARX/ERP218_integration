@@ -79,14 +79,6 @@ namespace ERP218_integration
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SaisieFactureClient.Monecran.Barre_boutons_1.BoutonCREER' at Center.", repo.SaisieFactureClient.Monecran.Barre_boutons_1.BoutonCREERInfo, new RecordItemIndex(0));
-            repo.SaisieFactureClient.Monecran.Barre_boutons_1.BoutonCREER.MoveTo();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SaisieFactureClient.Monecran.Barre_boutons_1.BoutonCREER' at Center.", repo.SaisieFactureClient.Monecran.Barre_boutons_1.BoutonCREERInfo, new RecordItemIndex(1));
-            repo.SaisieFactureClient.Monecran.Barre_boutons_1.BoutonCREER.Click();
-            Delay.Milliseconds(0);
-            
         }
 
 #region Image Feature Data

@@ -25,54 +25,6 @@ mode="Global">
 	<variables>
 	</variables>
 	<recorditems>
-		<mouseitem
-		action="Move"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="76c6a7f4-6536-4ca1-b29b-a788e4500910"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="e4ba8052-ef0d-4f01-9625-d50f0a3d1b29"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'mestoolbars']//div[#'toolbar_1_1']/span[#'toolbar_1_1_CREER']
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="76c6a7f4-6536-4ca1-b29b-a788e4500910"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="e4ba8052-ef0d-4f01-9625-d50f0a3d1b29"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@caption~'Divalto -.*- Factures Clients -.*']/body/div[#'monecran']/div[#'mestoolbars']//div[#'toolbar_1_1']/span[#'toolbar_1_1_CREER']
-				</path>
-			</info>
-		</mouseitem>
 	</recorditems>
 	<repository
 	id="7d506f9e-d97c-42d4-862d-cb53cb88c143"
